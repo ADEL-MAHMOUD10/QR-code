@@ -114,5 +114,4 @@ def generate_qr_code():
     buffer.seek(0)
     return send_file(buffer, mimetype="image/png", as_attachment=True,download_name="WIFI-QR.png")
 
-if __name__ == '__main__':
-    app.run(debug=False)
+
