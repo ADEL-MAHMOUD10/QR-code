@@ -8,7 +8,7 @@ app = Flask(__name__)
 my_skills = [ ("Html",80),("CSS",70),("Python",60),("C++",30),("Bootstarp",10),("Flask",5),("SQLite",3) ]
 @app.route("/")
 def main():
-    return render_template("index.html")
+    return render_template("qrcode1.html")
 @app.route("/index")
 def main_1():
     return render_template("index.html")
