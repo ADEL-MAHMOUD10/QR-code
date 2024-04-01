@@ -1,0 +1,321 @@
+:root{
+    --font-style: verdana;
+    --main-button: #008000;
+    --hover--button: #38b000;
+    --background--color: linear-gradient(180deg, rgba(115, 186, 114, 0.555) 0%, rgb(128, 176, 107) 90%);
+}
+*{
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    padding: 0;
+}
+
+body{
+    background-color: rgba(0, 0, 0, 0.817);
+}
+
+.tools{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+.tools a img{
+  height: 40px;
+  color: #fff;
+  padding: 8px;
+  border: none;
+  background: #181818;
+  border-radius: 10px;
+}
+.toogle{
+  display: flex;
+  margin: 5px;
+}
+.circle span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    width: 15px;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 50%;
+}
+.red {
+    background-color: #ff605c;
+}
+
+.yellow {
+    background-color: #ffbd44;
+}
+
+.green {
+    background-color: #00ca4e;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.main img{
+    max-width: 100%;
+    margin: auto;
+}
+
+.main .info{
+    display: grid;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.info h1{
+    color: #fff;
+    font-size: larger;
+    font-family: var(--font-style);
+}
+.info input{
+    padding: 10px;
+    margin: 5px;
+    width: 60%;
+    border-radius: 10px;
+}
+.info select{
+  padding: 10px;
+  font-family: var(--font-style);
+  border: none;
+  width: 20%;
+  margin: 5px;
+  border-radius: 10px;
+}
+
+.info button{
+    background-color: var(--main-button);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+.info button:hover{
+  background-color: var(--hover--button);
+}
+::placeholder{
+    font-family: var(--font-style);
+}
+.about{
+    margin: 10px;
+    margin-top: 50px;
+    font-family: var(--font-style);
+}
+
+.about h1{
+    color: #fff;
+    font-size: larger;
+}
+
+.about p{
+    color: #ffffff86;
+    font-size: small;
+    text-wrap: balance;
+}
+
+.social{
+  display: flex;
+}
+.social button{
+  margin: 10px;
+}
+.Btn {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BG {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #1877f2;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btn:hover .BG {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btn:hover .svgContainer {
+  border: 1px solid rgba(230, 230, 230, 0.466);
+  background-color: rgba(204, 204, 204, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+
+.Btntwit {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 7px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainertwit {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(0px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BGtwit {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #181818;
+  z-index: -1;
+  border-radius: 10px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btntwit:hover .BGtwit {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btntwit:hover .svgContainertwit {
+  background-color: rgba(156, 156, 156, 0.466);
+  backdrop-filter: blur(4px);
+}
+
+.Btninsta {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background-color: transparent;
+  position: relative;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.svgContainerinsta {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  backdrop-filter: blur(4px);
+  letter-spacing: 0.8px;
+  border-radius: 10px;
+  transition: all 0.3s;
+  border: 1px solid rgba(156, 156, 156, 0.466);
+}
+
+.BGinsta {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: #39f033;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+  z-index: -1;
+  border-radius: 9px;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+
+.Btninsta:hover .BGinsta {
+  transform: rotate(35deg);
+  transform-origin: bottom;
+}
+
+.Btninsta:hover .svgContainerinsta {
+  background-color: rgba(156, 156, 156, 0.466);
+}
+
+@media (max-width: 986px) {
+    .tools a img{
+        height: 27px;
+    }
+    .main{
+        display: grid;
+    }
+    .main h1{
+        font-size: medium;
+    }
+    .main img{
+      width: 100%;
+    }
+}
