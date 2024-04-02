@@ -100,27 +100,17 @@ body{
     width: 80%;
 }
 .I-QR h1{
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     font-family: var(--font-style);
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .I-QR p{
     margin-top: 5px;
     color: #ffffff84;
     font-size: smaller;
 }
-/* .skill{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #fff;
-    background-color: #079407;
-    margin: auto;
-    padding: 10px;
-    border-radius: 10px;
-    width: 200px;
-} */
+
 .G-code{
     display: flex;
     justify-content: space-between;
@@ -137,12 +127,11 @@ body{
 }
 .G-code .Qr a{
     color: #fff;
-    margin: auto;
+    margin:10px auto;
     font-size: small;
     font-family: var(--font-style);
     background-color: var(--main-button);
     padding: 10px;
-    margin-top: 5px;
     border-radius: 20px;
 }
 .G-code .Qr a:hover{
@@ -152,7 +141,7 @@ body{
 }
 .G-code .Qr img{
     margin: auto;
-    width: 100%;
+    width: 90%;
 }
 .G-code .Q-info{
     display: grid;
@@ -162,10 +151,10 @@ body{
     align-items: center;
 }
 .G-code .Q-info h1{
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     font-family: var(--font-style);
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .G-code .Q-info p{
     margin-top: 5px;
@@ -215,10 +204,10 @@ body{
     align-items: center;
 }
 .v-code .V-info h1{
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     font-family: var(--font-style);
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .v-code .V-info p{
     margin-top: 5px;
@@ -265,34 +254,17 @@ body{
     align-items: center;
 }
 .W-code .W-info h1{
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     font-family: var(--font-style);
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .W-code .W-info p{
     margin-top: 5px;
     color: #ffffff84;
     font-size: smaller;
 }
-/* .hand{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 15px;
-}
-.hand h1{
-    font-family: var(--font-style);
-    color: #fff;
-}
-.hand p{
-    justify-content: center;
-    color: #ffffff84;
-}
-.hand img{
-    max-width: 430px;
-    max-height: 420px;
-} */
+
 .digital{
     display: flex;
     justify-content: space-between;
@@ -302,7 +274,7 @@ body{
 }
 .digital img{
     margin: auto;
-    max-width: 55%;
+    max-width: 60%;
     background-image: url(/static/images/vcard.png);
     background-position: 50%;
     background-position-y: 100%;
@@ -310,10 +282,10 @@ body{
     background-size: 65%;
 }
 .digital h1{
-    font-size: 1rem;
+    font-size: 1.1rem;
     color: #fff;
     font-family: var(--font-style);
-    margin-top: 10px;
+    margin-bottom: 20px;
 }
 .digital p{
     margin-top: 5px;
@@ -623,17 +595,17 @@ body{
         font-family: Red Hat Display;
     }
     .home .logo h1{
-        font-size: 2.7rem;
+        font-size: 2.4rem;
     }
     .home .logo img {
         width: 100%;
-        height: 85px;
+        height: 80px;
     }
     .menu ul li{
         margin: 5px;
     }
     .menu ul a{
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
     .I-QR{
         display: grid;
