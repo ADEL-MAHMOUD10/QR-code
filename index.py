@@ -5,7 +5,6 @@ from PIL import Image
 
 
 app = Flask(__name__)
-my_skills = [ ("Html",80),("CSS",70),("Python",60),("C++",30),("Bootstarp",10),("Flask",5),("SQLite",3) ]
 @app.route("/")
 def main():
     return render_template("index.html")
@@ -35,10 +34,6 @@ def generate_qrcode():
   buffer.seek(0)
   return send_file(buffer, mimetype="image/png", as_attachment=True,download_name="URL-QR.png")
   # return render_template("QRcode.html", qr_code=filename)
-
-@app.route("/skills")
-def skills():
-    return render_template("skills.html", skills = my_skills  )
 
 # Vcard qrcode
 @app.route("/vcard")
