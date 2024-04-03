@@ -1,8 +1,7 @@
 {
-    "name": "QRCODE: QR code generator",
+    "name": "QRCODE: qrcode generator",
     "short_name": "QRCODE",
     "description": "QR code generator ,for many type (wifi,link,vcard)",
-    "id": ".",
     "icons": [
       {
         "src": "/static/images/qr-code.png",
@@ -15,12 +14,14 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/",
+    "start_url": "/templates/index.html",
     "background_color": "#181818",
-    "display": "standalone",
+    "display": "fullscreen",
     "orientation": "portrait",
     "scope":"/",
     "theme_color": "#181818",
     "lang": "en",
-    "dir": "auto"
+    "dir": "auto",
+    "app_shell_url": "/templates/index.html",
+    "service_worker": "/js/service-worker.js"
   }
