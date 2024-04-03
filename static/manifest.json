@@ -31,7 +31,7 @@
     "display": "standalone",
     "author": "Adel Mahmoud",
     "orientation": "portrait",
-    "scope":"/",
+    "scope":"https://makeqrcode.vercel.app",
     "theme_color": "#000",
     "lang": "en",
     "dir": "auto"
