@@ -14,7 +14,7 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/templates/index.html",
+    "start_url": "/index.html",
     "background_color": "#181818",
     "display": "fullscreen",
     "orientation": "portrait",
@@ -22,6 +22,6 @@
     "theme_color": "#181818",
     "lang": "en",
     "dir": "auto",
-    "app_shell_url": "templates/index.html",
+    "app_shell_url": "/index.html",
     "service_worker": "/js/service-worker.js"
   }
