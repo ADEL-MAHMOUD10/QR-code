@@ -26,6 +26,11 @@
       "form_factor": "wide"
     },
     {
+      "src": "/static/images/imatge-4-1.png",
+      "sizes": "1280x720",
+      "type": "image/png"
+    },
+    {
       "src": "/static/images/Screenshot_20240404_000511.jpg",
       "sizes": "1080x1689",
       "type": "image/jpg",
