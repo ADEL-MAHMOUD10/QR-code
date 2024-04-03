@@ -14,12 +14,35 @@
         "sizes": "512x512"
       }
     ],
-    "start_url": "/",
+    "chrome_settings_overrides" :[ {
+    "homepage": "https://makeqrcode.vercel.app/"
+      }
+    ],
+    {
+  "screenshots" : [
+    {
+      "src": "/static/images/imatge-4-1.png",
+      "sizes": "1280x720",
+      "type": "image/webp"
+    },
+    {
+      "src": "/static/images/imatge-4-1.png",
+      "sizes": "1280x720",
+      "type": "image/webp"
+    }
+  ]
+},
+    "start_url": "https://makeqrcode.vercel.app",
     "background_color": "#181818",
-    "display": "fullscreen",
+    "display_override": ["window-control-overlay", "minimal-ui"],
+    "display": "standalone",
+    "author": "Adel Mahmoud",
     "orientation": "portrait",
     "scope":"/",
-    "theme_color": "#181818",
+    "theme_color": {
+      "dark": "#000",
+      "light": "#fff"
+    },
     "lang": "en",
     "dir": "auto"
   }
