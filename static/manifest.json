@@ -22,23 +22,23 @@
     {
       "src": "/static/images/imatge-4-1.png",
       "sizes": "1280x720",
-      "type": "image/webp"
+      "type": "image/png"
     },
     {
       "src": "static/images/Screenshot_20240404_000511.jpg",
       "sizes": "1280x720",
-      "type": "image/webp"
+      "type": "image/jpg"
     },
     {
       "src": "static/images/Screenshot_20240404_000538_com.android.chrome_edit_500662947900166.jpg",
       "sizes": "1280x720",
-      "type": "image/webp"
+      "type": "image/jpg"
     }
   ],
     "start_url": "https://makeqrcode.vercel.app",
     "background_color": "#181818",
     "display_override": ["window-control-overlay", "minimal-ui"],
-    "display": "standalone",
+    "display": "fullscreen",
     "author": "Adel Mahmoud",
     "orientation": "portrait",
     "scope":"/",
