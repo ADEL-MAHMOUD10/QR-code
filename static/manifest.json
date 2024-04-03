@@ -23,5 +23,5 @@
     "lang": "en",
     "dir": "auto",
     "app_shell_url": "index.html",
-    "service_worker": "js/service-worker.js"
+    "service_worker": "service-worker.js"
   }
