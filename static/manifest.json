@@ -18,7 +18,6 @@
     "homepage": "https://makeqrcode.vercel.app/"
       }
     ],
-    {
   "screenshots" : [
     {
       "src": "/static/images/imatge-4-1.png",
@@ -30,8 +29,7 @@
       "sizes": "1280x720",
       "type": "image/webp"
     }
-  ]
-},
+  ],
     "start_url": "https://makeqrcode.vercel.app",
     "background_color": "#181818",
     "display_override": ["window-control-overlay", "minimal-ui"],
