@@ -25,7 +25,12 @@
       "type": "image/webp"
     },
     {
-      "src": "/static/images/imatge-4-1.png",
+      "src": "static/images/Screenshot_20240404_000511.jpg",
+      "sizes": "1280x720",
+      "type": "image/webp"
+    },
+    {
+      "src": "static/images/Screenshot_20240404_000538_com.android.chrome_edit_500662947900166.jpg",
       "sizes": "1280x720",
       "type": "image/webp"
     }
@@ -37,10 +42,7 @@
     "author": "Adel Mahmoud",
     "orientation": "portrait",
     "scope":"/",
-    "theme_color": {
-      "dark": "#000",
-      "light": "#fff"
-    },
+    "theme_color": "#000",
     "lang": "en",
     "dir": "auto"
   }
