@@ -25,12 +25,12 @@
       "type": "image/png"
     },
     {
-      "src": "static/images/Screenshot_20240404_000511.jpg",
+      "src": "/static/images/Screenshot_20240404_000511.jpg",
       "sizes": "1280x720",
       "type": "image/jpg"
     },
     {
-      "src": "static/images/Screenshot_20240404_000538_com.android.chrome_edit_500662947900166.jpg",
+      "src": "/static/images/Screenshot_20240404_000538_com.android.chrome_edit_500662947900166.jpg",
       "sizes": "1280x720",
       "type": "image/jpg"
     }
