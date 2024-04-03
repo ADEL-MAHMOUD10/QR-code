@@ -7,13 +7,11 @@
         "src": "/static/images/qr-code.png",
         "type": "image/png",
         "sizes": "192x192",
-        "form_factor": "wide"
       },
       {
         "src": "/static/images/qr-code.png",
         "type": "image/png",
         "sizes": "512x512",
-        "form_factor": "wide"
       }
     ],
     "chrome_settings_overrides" :[ {
@@ -25,13 +23,12 @@
       "src": "/static/images/imatge-4-1.png",
       "sizes": "1280x720",
       "type": "image/png",
-      "form_factor": "wide"
+      "form_factor": "narrow"
     },
     {
       "src": "/static/images/Screenshot_20240404_000511.jpg",
       "sizes": "1080x1689",
       "type": "image/jpg",
-      "form_factor": "wide"
     },
     {
       "src": "/static/images/Screenshot_20240404_000538_com.android.chrome_edit_500662947900166.jpg",
