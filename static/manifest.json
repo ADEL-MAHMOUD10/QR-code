@@ -1,6 +1,6 @@
 {
-    "name": "QRCODE",
-    "short_name": "QRC",
+    "name": "QRCODE: QR code generator",
+    "short_name": "QRCODE",
     "description": "QR code generator ,for many type (wifi,link,vcard)",
     "id": ".",
     "icons": [
