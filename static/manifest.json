@@ -22,6 +22,6 @@
     "theme_color": "#181818",
     "lang": "en",
     "dir": "auto",
-    "app_shell_url": "/templates/index.html",
+    "app_shell_url": "templates/index.html",
     "service_worker": "/js/service-worker.js"
   }
