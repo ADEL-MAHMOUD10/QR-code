@@ -633,9 +633,6 @@ body{
         display: grid;
         margin: 10px;
     }
-    .v-code img{
-        width: 50%;
-    }
     .v-code .vCard a{
         width: 40%;
         padding: 30px;
