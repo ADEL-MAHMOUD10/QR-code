@@ -99,9 +99,7 @@ img{
         justify-content: center;
         transform: translateY(0%);
     }
-    img{
-        margin: auto;
-    }
+
 }
 @media (max-width:535px) {
     .error{
@@ -110,9 +108,7 @@ img{
         justify-content: center;
         transform: translateY(5%);
     }
-    img{
-        margin: auto;
-    }
+
 }
 @media (max-width:430px) {
     .error{
@@ -121,7 +117,5 @@ img{
         justify-content: center;
         transform: translateY(30%);
     }
-    img{
-        margin: auto;
-    }
+
 }
