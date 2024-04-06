@@ -96,7 +96,7 @@ def generate_qr_code():
 # generating QR code
     QRcode.make()
  
-# taking color name from user
+# taking color For QR
     QRcolor = 'Green'
  
 # adding color to QR code
