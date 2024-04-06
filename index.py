@@ -21,7 +21,7 @@ def Home():
 def generate_qrcode():
   url = request.form.get("url")
   if not url:
-    return render_template("error-page.html")
+    return render_template("error-q.html")
 
   qr = qrcode.QRCode(version=5)
   qr.add_data(url)
@@ -47,13 +47,7 @@ def card():
     vcard_info = "BEGIN:VCARD\n" + "\n".join(contact) + "\nEND:VCARD\n"
     
     if not name or not email or not phone:
-      return render_template("error-page.html") 
-    # another way
-    # vcard_info = "BEGIN:VCARD\n"
-    # vcard_info += "FN:" + name + "\n"
-    # vcard_info += "EMAIL:" + email + "\n"
-    # vcard_info += "TEL:" + phone + "\n"
-    # vcard_info += "END:VCARD\n"
+      return render_template("error-v.html") 
     qr_color = "Green"
     qr = qrcode.QRCode(version=5)
     qr.add_data(vcard_info)
