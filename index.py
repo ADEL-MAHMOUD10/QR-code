@@ -86,7 +86,7 @@ def generate_qr_code():
         data = "WIFI:S:" + ssid + ";T:"+ T_wifi +";P:" + password + ";;"
         if not ssid or not password or not T_wifi:
             return "Please fill in all fields"
-    QRcode = qrcode.QRCode(
+    QRcode = qrcode.QRCode( version = 5,
       error_correction=qrcode.constants.ERROR_CORRECT_H
     )
  
