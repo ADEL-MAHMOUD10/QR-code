@@ -54,6 +54,8 @@ button{
     border: 2px solid #124a34;
     border-radius: 5px;
     width: 100px;
+    font-family: verdana;
+    font-weight: bold;
 }
 button:hover{
     color: #fff;
