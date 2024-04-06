@@ -119,7 +119,7 @@ img{
         display: grid;
         align-items: center;
         justify-content: center;
-        transform: translateY(25%);
+        transform: translateY(30%);
     }
     img{
         margin: auto;
