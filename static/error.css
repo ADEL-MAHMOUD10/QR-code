@@ -35,7 +35,7 @@ body{
     justify-content: center;
     align-items: center;
     margin: auto;
-    transform: translateY(25%);
+    transform: translateY(10%);
 }
 .info{
     margin: 0 auto ;
@@ -96,7 +96,7 @@ img{
         display: grid;
         align-items: center;
         justify-content: center;
-        transform: translateY(0%);
+        transform: translateY(35%);
     }
 
 }
@@ -114,7 +114,7 @@ img{
         display: grid;
         align-items: center;
         justify-content: center;
-        transform: translateY(40%);
+        transform: translateY(30%);
     }
 
 }
