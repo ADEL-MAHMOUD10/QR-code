@@ -21,8 +21,7 @@ def Home():
 def generate_qrcode():
   url = request.form.get("url")
   if not url:
-    return "Please fill in all fields."
-    # return render_template("QRcode.html")
+    return render_template("error-page.html")
 
   qr = qrcode.QRCode(version=5)
   qr.add_data(url)
@@ -33,7 +32,7 @@ def generate_qrcode():
   img.save(buffer,format="PNG")
   buffer.seek(0)
   return send_file(buffer, mimetype="image/png", as_attachment=True,download_name="URL-QR.png")
-  # return render_template("QRcode.html", qr_code=filename)
+
 
 # Vcard qrcode
 @app.route("/vcard")
@@ -48,7 +47,7 @@ def card():
     vcard_info = "BEGIN:VCARD\n" + "\n".join(contact) + "\nEND:VCARD\n"
     
     if not name or not email or not phone:
-      return "Please fill in all fields." 
+      return render_template("error-page.html") 
     # another way
     # vcard_info = "BEGIN:VCARD\n"
     # vcard_info += "FN:" + name + "\n"
@@ -71,7 +70,7 @@ def card():
 def wifi():
     return render_template("wifi.html")
 
-@app.route("/download", methods=["POST"])
+@app.route("/WIFI/download", methods=["POST"])
 def generate_qr_code():
     ssid = request.form.get("SSID")
     password = request.form.get("Password")
@@ -80,12 +79,12 @@ def generate_qr_code():
     while T_wifi == "None":
         data = "WIFI:S"+ssid+";T:"+T_wifi+";;"
         if not ssid or not T_wifi:
-            return "Please fill in all fields."
+            return render_template("error-w.html")
         break
     else:
         data = "WIFI:S:" + ssid + ";T:"+ T_wifi +";P:" + password + ";;"
         if not ssid or not password or not T_wifi:
-            return "Please fill in all fields"
+            return render_template("error-w.html")
     QRcode = qrcode.QRCode( version = 5,
       error_correction=qrcode.constants.ERROR_CORRECT_H
     )
