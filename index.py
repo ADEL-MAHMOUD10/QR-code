@@ -26,7 +26,7 @@ def generate_qrcode():
   qr = qrcode.QRCode(version=5)
   qr.add_data(url)
   qr.make()
-  qr_co = "Yellow"
+  qr_co = "Green"
   img = qr.make_image(fill_color = qr_co ,back_color = "white").convert("RGB")
   buffer = io.BytesIO()
   img.save(buffer,format="PNG")
