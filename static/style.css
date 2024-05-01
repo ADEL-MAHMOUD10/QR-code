@@ -111,7 +111,11 @@ body{
     color: #ffffff84;
     font-size: smaller;
 }
-
+.Q-info span,.v-code .V-info span , .W-info span {
+    color: #00ca4e;
+    font-size: 1.8rem;
+    font-weight: 900;
+}
 .G-code{
     display: flex;
     justify-content: space-between;
