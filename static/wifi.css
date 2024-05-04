@@ -91,6 +91,7 @@ body{
   width: 20%;
   margin: 5px;
   border-radius: 10px;
+  font-weight: 700;
 }
 
 .info button{
@@ -99,12 +100,42 @@ body{
     padding: 10px;
     border-radius: 10px;
     color: #fff;
+    transition: 1s;
 }
 .info button:hover{
+  transform: scale(1.1);
   background-color: var(--hover--button);
 }
 ::placeholder{
     font-family: var(--font-style);
+}
+.wifi_hidden{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wifi_hidden h3{
+  color: #fff;
+  font-family: Verdana;
+  font-size: 15px;
+}
+.wifi_hidden select{
+  padding: 5px;
+  font-family: var(--font-style);
+  border: none;
+  text-align: center;
+  margin: 10px;
+  width: 42%;
+  border-radius: 10px;
+  font-weight: 700;
+}
+.wifi_hidden i{
+  font-size: 0.6rem;
+  margin: 0 5px;
+  background-color: #fff;
+  padding: 7px;
+  border: none;
+  border-radius: 50%;
 }
 .about{
     margin: 10px;
