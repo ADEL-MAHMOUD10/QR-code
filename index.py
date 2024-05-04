@@ -26,7 +26,7 @@ def generate_qrcode():
   qr = qrcode.QRCode(version=5)
   qr.add_data(url)
   qr.make()
-  qr_co = "Green"
+  qr_co = "black"
   img = qr.make_image(fill_color = qr_co ,back_color = "white").convert("RGB")
   buffer = io.BytesIO()
   img.save(buffer,format="PNG")
@@ -48,7 +48,7 @@ def card():
     
     if not name or not email or not phone:
       return render_template("error-v.html") 
-    qr_color = "Green"
+    qr_color = "black"
     qr = qrcode.QRCode(version=5)
     qr.add_data(vcard_info)
     qr.make()
@@ -69,6 +69,7 @@ def generate_qr_code():
     ssid = request.form.get("SSID")
     password = request.form.get("Password")
     T_wifi = request.form.get("T_wifi")
+    hidden = request.form.get("Hidden")
 # التحقق من صحة المدخلات
     while T_wifi == "None":
         data = "WIFI:S"+ssid+";T:"+T_wifi+";;"
@@ -79,8 +80,16 @@ def generate_qr_code():
         data = "WIFI:S:" + ssid + ";T:"+ T_wifi +";P:" + password + ";;"
         if not ssid or not password or not T_wifi:
             return render_template("error-w.html")
-    QRcode = qrcode.QRCode( version = 5,
-      error_correction=qrcode.constants.ERROR_CORRECT_H
+    while hidden == "Y":
+        data = "WIFI:S:" + ssid + ";T:"+ T_wifi + ";P:" + password + ";H:True; "
+        break
+    else:
+        data = "WIFI:S:" + ssid + ";T:"+ T_wifi +";P:" + password + ";;"
+    QRcode = qrcode.QRCode(
+        version=5,
+        box_size=10,
+        border=4,
+        error_correction=qrcode.constants.ERROR_CORRECT_H
     )
  
 # adding data or text to QRcode
@@ -90,7 +99,7 @@ def generate_qr_code():
     QRcode.make()
  
 # taking color For QR
-    QRcolor = 'Green'
+    QRcolor = 'black'
  
 # adding color to QR code
     QRimg = QRcode.make_image(
