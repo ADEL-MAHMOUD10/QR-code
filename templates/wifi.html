@@ -22,7 +22,11 @@
             <h1>CREATE WIFI QRCODE</h1>
             <form action="WIFI/download" method="post">
                 <input type="text" name="SSID" placeholder="SSID(Network name)">
-                <input type="password" name="Password" placeholder="Password">
+                <div class="pass">
+                  <input type="password" class="i_pass" name="Password" placeholder="Password" id="myInput">
+                  <input type="checkbox" onclick="myFunction()">
+                  <span>Show Password</span>
+                </div>
                   <div class="wifi_hidden">
                     <select name="Hidden">
                       <option value="Y">YES</option>
