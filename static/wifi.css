@@ -109,6 +109,25 @@ body{
 ::placeholder{
     font-family: var(--font-style);
 }
+
+.pass{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  margin: 0 47px;
+}
+.pass .i_pass{
+  width: 50%;
+}
+.pass input{
+  width: 5%;
+}
+.pass span{
+  color: #fff;
+  font-family: Verdana;
+  font-size: 0.5rem;
+}
 .wifi_hidden{
   display: flex;
   justify-content: center;
