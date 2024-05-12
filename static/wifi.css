@@ -62,7 +62,7 @@ body{
     margin-top: 50px;
 }
 .main img{
-    max-width: 55%;
+    max-width: 100%;
     margin: auto;
 }
 
@@ -361,8 +361,5 @@ body{
     }
     .main h1{
         font-size: medium;
-    }
-    .main img{
-      width: 100%;
     }
 }
