@@ -62,7 +62,7 @@ body{
     margin-top: 50px;
 }
 .main img{
-    max-width: 100%;
+    max-width: 55%;
     margin: auto;
 }
 
@@ -355,10 +355,7 @@ body{
   background-color: rgba(156, 156, 156, 0.466);
 }
 
-@media (max-width: 986px) {
-    .tools a img{
-        height: 27px;
-    }
+@media (max-width: 1186px) {
     .main{
         display: grid;
     }
