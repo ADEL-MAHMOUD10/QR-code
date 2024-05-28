@@ -1,210 +1,209 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="description" content="QR code generator ,for many type (wifi,link,vcard)"/>
-    <meta name="author" content="A D E L" />
-    <meta name="viewport" content="width=device-width, initial-scale=0.5">
-    <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
-    <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="black">
-    <title>QRCODE</title>
-    <link rel="stylesheet" href="/static/style.css">
-    <link rel="manifest" href="/static/manifest.json">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik+Scribble&display=swap" rel="stylesheet">
-    <link rel="icon" href="{{url_for('static',filename='/images/qr-code.png')}}">
-    <link rel="icon" href="/static/images/qr-code.png">
-    <link rel="stylesheet" href="{{ url_for('static' , filename='style.css') }}">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" \>
+  <meta charset="UTF-8">
+  <meta name="description" content="QR code generator ,for many type (wifi,link,vcard)"/>
+  <meta name="author" content="A D E L" />
+  <meta name="viewport" content="width=device-width, initial-scale=0.5">
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="white">
+  <meta name="theme-color" media="(prefers-color-scheme: dark)"  content="black">
+  <title>QRCODE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Rubik+Scribble&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" \>
+  <link rel="icon" href="{{url_for('static',filename='/images/qr-code.png')}}">
+  <link rel="manifest" href="/static/manifest.json">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="/static/styl.css">
 </head>
 
 <body>
-    <div class="home">
-        <div class="logo">
-          <a href="/home"><img src="/static/images/qr-code.png" alt="..."></a>
-          <h1>QRCODE</h1>
-        </div>
-        <div class="menu">
-            <ul>
-                <li>
-                    <a href="#URL"><i class="fa-solid fa-link"></i></a>
-                    <a href="#URL">URL</a>
-                </li>
-                <li>
-                    <a href="#vcard"><i class="fa-solid fa-id-card"></i></a>
-                    <a href="#vcard">VCARD</a>
-                </li>
-                <li>
-                    <a href="#WIFI"><i class="fa-solid fa-wifi"></i></a>
-                    <a href="#WIFI">WIFI</a>
-                </li>
-            </ul>
-        </div>
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index">QRCODE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="QR">URL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="WIFI">WIFI</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="vcard">vCard</a>
+          </li>
+        </ul>
+      </div>
     </div>
-        <div class="I-QR">
-          <img src="/static/images/home-bg.png" alt="...">
-            <div>
-              <h1>Download Your QR-Code</h1>
-                <p>
-                    QR Code is a two-dimensional version of the barcode, typically made up of black and white pixel patterns. Now, it has found its way into mobile marketing with the widespread adoption of smartphones. "QR" stands for "Quick Response", which refers to the instant access to the information hidden in the Code.
-                </p>
-            </div>
+  </nav>
+  <!-- Swiper -->
+  <div class="intro">
+    <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+      <div class="parallax-bg" style="
+          " data-swiper-parallax="15%">
+      <img src="/static/images/home-bg.png" alt="...">
+    </div>
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-500">URL</div>
+          <div class="subtitle" data-swiper-parallax="-400">Create QR-Code From Link</div>
+          <div class="text" data-swiper-parallax="-200">
+            <p>
+              <p>Imagine the power of creating a QR code from a link,
+                transforming a web address into a compact,
+                 matrix-like structure that smartphones and devices can instantaneously decipher./
+                  This process, facilitated by a QR link generator,
+                  takes the characters of a standard URL and translates them into a visual representation with built-in error correction mechanisms.
+                   This means that even if the QR code sustains minor damage or distortion,
+                    it can still be accurately scanned and decoded, 
+                effectively turning the link to the QR code
+            </p>
+            <a href="QR"><button>Create QRCDOE</button></a>
+          </div>
         </div>
-                <div class="G-code">
-                    <div class="Qr" id="URL">
-                        <img src="/static/images/web-inbox-emails.png" alt="..." loading="lazy">
-                        <a href="QR">Create QR </a>
-                    </div>
-                    <div class="Q-info">
-                        <h1>Create <span>URL</span> QR-Code</h1>
-                        <p>Imagine the power of creating a QR code from a link, transforming a web address into a compact, matrix-like structure that smartphones and devices can instantaneously decipher. This process, facilitated by a QR link generator, takes the characters of a standard URL and translates them into a visual representation with built-in error correction mechanisms. This means that even if the QR code sustains minor damage or distortion, it can still be accurately scanned and decoded, effectively turning the link to the QR code</p>
-                    </div>
-                </div>
-                <div class="v-code" id="vcard">
-                  <div class="vCard">
-                      <img src="/static/images/free_vcards.png" alt="..." loading="lazy">
-                      <a href="vcard">Create vCard </a>
-                  </div>
-                    <div class="V-info">
-                        <h1>Create <span>vCard</span> QR-Code</h1>
-                        <p>
-                            Having a vCard QR code on your business card or other marketing materials can make it easy for people to quickly and easily access your contact information. By simply scanning the QR code, potential customers or clients can save your contact details directly into their phone's address book. This can save time and reduce errors that can occur when manually entering contact information. Additionally, a vCard QR code can give your business a more modern and tech-savvy images, making it stand out from competitors who are still relying on traditional printed materials.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="W-code" id="WIFI">
-              <div class="wifi">
-                <img src="/static/images/wifisection1.png" alt="..." loading="lazy">
-                <a href="WIFI">Create wifi QR</a>
-              </div>
-              <div class="W-info">
-                <h1>Create <span>Wifi</span> QR-Code
-                </h1>
-                <p>Our generator now lets you create a QR Code that allows you to connect to a WiFi network just by pointing your camera at it or by using a QR Code scanner. And the best part? Our WiFi QR Code generator is completely free to use, and the generated QR Code will never expire (unless the settings on your router changed). With a WiFi QR Code, you can also share your WiFi easily with friends, family, and your customers.</p>
-              </div>
-            </div>
-            <div class="digital">
-              <img src="/static/images/pngwing.png" alt="..." loading="lazy">
-              <div>
-                <h1>How do i scan QR Codes?</h1>
-                <p>
-                  Depending on your device, you might already have a built-in QR Code reader or scanner. Open the camera app on your mobile phone and hold it over a Code for a few seconds until a notification pops up. If this doesn’t happen, check your settings and see if QR Code scanning is enabled. Still not working? Don’t worry, all you have to do now is install third-party QR Code readers from your app stores.</p>
-              </div>
-            </div>
-            <div class="tools">
-              <img src="/static/images/home-image-2.svg" alt="..." loading="lazy">
-              <div class="circle">
-                <h1>The Anatomy of a QR Code</h1>
-                <h6></h6>
-                <span class="color1"></span>
-                <p>Positional alignment indicators within scanning application</p>
-                <h6></h6>
-                <span class="color2"></span>
-                <p>Timing pattern to determine module coordinates within symbol</p>
-                <h6></h6>
-                <span class="color3"></span>
-                <p>Error correction control information</p>
-                <h6></h6>
-                <span class="color4"></span>
-                <p>Encoded data</p>
-                <h6></h6>
-                <span class="color5"></span>
-                <p>"Quiet Zone" buffer to isolate symbol from surroundings</p>
-              </div>
-            </div>
-            <div class="T_QR">
-              <img src="/static/images/imatge-4-1.png" alt="..." loading="lazy">
-              <div class="items">
-                <div class="m-items">
-                  <a href="QR"><i class="fa-solid fa-link"></i></a>
-                  <a href="QR">URL</a>
-                </div>
-                <p>
-                  Use this type to open a link to a webpage, contact form, or Youtube.
-                </p>
-              </div>
-              <div class="items">
-                <div class="m-items">
-                  <a href="vcard"><i class="fa-solid fa-id-card"></i></a>
-                  <a href="vcard">VCARD</a>
-                </div>
-                <p>
-                  Use this type to create a digital business card with save to phone feature.</p>
-              </div>
-              <div class="items">
-                <div class="m-items">
-                  <a href="WIFI"><i class="fa-solid fa-wifi"></i></a>
-                  <a href="WIFI">WIFI</a>
-                </div>
-                <p>
-                  Use this type to connect to a WiFi network without typing the password.</p>
-              </div>
-            </div>
-                    <footer>
-                        <div class="social">  
-                          <a href="https://www.facebook.com/profile.php?id=100013266852973">
-                            <button class="Btn">
-                              <span class="svgContainer">
-                                <svg
-                                  viewBox="0 0 320 512"
-                                  height="3em"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  class="svgIcon"
-                                  fill="white"
-                                >
-                                  <path
-                                    d="M80 299.3V512H196V299.3h86.5l18-97.8H196V166.9c0-51.7 20.3-71.5 72.7-71.5c16.3 0 29.4 .4 37 1.2V7.9C291.4 4 256.4 0 236.2 0C129.3 0 80 50.5 80 159.4v42.1H14v97.8H80z"
-                                  ></path>
-                                </svg>
-                              </span>
-                              <span class="BG"></span>
-                            </button>    
-                          </a>
-                    
-                          <a href="https://twitter.com/Adel_MAhmoud100?s=09">
-                            <button class="Btntwit">
-                              <span class="svgContainertwit">
-                                <svg
-                                  fill="white"
-                                  class="svgIcontwit"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  height="3em"
-                                  viewBox="0 0 512 512"
-                                >
-                                  <path
-                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
-                                  ></path>
-                                </svg>
-                              </span>
-                              <span class="BGtwit"></span>
-                            </button>
-                          </a>
-                    
-                          <a href="http://instagram.com/adel_mahmoud10/">
-                            <button class="Btninsta">
-                              <span class="svgContainerinsta">
-                                <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                height=" 3em"
-                                viewBox="0 0 448 512"
-                                class="svgIconinsta"
-                                fill="white"
-                                >
-                                <path
-                                d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                                ></path>
-                              </svg>
-                            </span>
-                            <span class="BGinsta"></span>
-                        </button>
-                          </a>
-                      </div>
-                      </footer>
-<script>
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-</script>
-<script defer src="/_vercel/insights/script.js"></script>
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-500">vCard</div>
+          <div class="subtitle" data-swiper-parallax="-400">Create vCard QR-Code</div>
+          <div class="text" data-swiper-parallax="-200">
+            <p>
+              Having a vCard QR code on your business card or other marketing materials can make it easy for people to quickly and easily access your contact information. 
+              By simply scanning the QR code,
+               potential customers or clients can save your contact details directly into their phone's address book. 
+              This can save time and reduce errors that can occur when manually entering contact information.
+               Additionally,
+               a vCard QR code can give your business a more modern and tech-savvy images,
+               making it stand out from competitors who are still relying on traditional printed materials.
+            </p>
+            <a href="vcard"><button>Create QRCDOE</button></a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="title" data-swiper-parallax="-500">WIFI</div>
+          <div class="subtitle" data-swiper-parallax="-400">Create Wifi QR</div>
+          <div class="text" data-swiper-parallax="-200">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+              dictum mattis velit, sit amet faucibus felis iaculis nec. Nulla
+              laoreet justo vitae porttitor porttitor. Suspendisse in sem justo.
+              Integer laoreet magna nec elit suscipit, ac laoreet nibh euismod.
+              Aliquam hendrerit lorem at elit facilisis rutrum. Ut at
+              ullamcorper velit. Nulla ligula nisi, imperdiet ut lacinia nec,
+              tincidunt ut libero. Aenean feugiat non eros quis feugiat.
+            </p>
+            <a href="WIFI"><button>Create QRCDOE</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+  </div>
+  <div class="T_QR">
+      <div class="items">
+        <div class="m-items">
+          <a href="QR"><i class="fa-solid fa-link"></i></a>
+          <a href="QR">URL</a>
+        </div>
+        <p>
+          Use this type to open a link to a webpage, contact form, or Youtube.
+        </p>
+      </div>
+      <div class="items">
+        <div class="m-items">
+          <a href="vcard"><i class="fa-solid fa-id-card"></i></a>
+          <a href="vcard">vCard</a>
+        </div>
+        <p>
+          Use this type to create a digital business card with save to phone feature.</p>
+      </div>
+      <div class="items">
+        <div class="m-items">
+          <a href="WIFI"><i class="fa-solid fa-wifi"></i></a>
+          <a href="WIFI">WIFI</a>
+        </div>
+        <p>
+          Use this type to connect to a WiFi network without typing the password.</p>
+      </div>
+  </div>
+  <div class="anatomy">
+    <div class="tools">
+      <img src="/static/images/home-image-2.svg" alt="..." loading="lazy">
+      <div class="circle">
+        <h1>The Anatomy of a QR Code</h1>
+        <h6></h6>
+        <span class="color1"></span>
+        <p>Positional alignment indicators within scanning application</p>
+        <h6></h6>
+        <span class="color2"></span>
+        <p>Timing pattern to determine module coordinates within symbol</p>
+        <h6></h6>
+        <span class="color3"></span>
+        <p>Error correction control information</p>
+        <h6></h6>
+        <span class="color4"></span>
+        <p>Encoded data</p>
+        <h6></h6>
+        <span class="color5"></span>
+        <p>"Quiet Zone" buffer to isolate symbol from surroundings</p>
+      </div>
+    </div>
+  </div>
+    <footer>
+      <div class="footer-class">
+        <div class="main">
+          <h1>QRCODE Generator</h1>
+          <p>Try our QR code generator for free.</p>
+        </div>
+        <div class="butn">
+          <a href="">Get Started</a>
+        </div>
+        <div class="hz-line"></div>
+        <div class="terms">
+          <div class="footer-year">
+            <div>©</div>
+            <div>2024</div>
+          </div>
+          <div class="design">
+            <h5>Site by <span>A D E L M A H M O U D</span></h5>
+          </div>
+          <div class="social">
+            <a href="http://instagram.com/adel_mahmoud10/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://twitter.com/Adel_MAhmoud100?s=09"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100013266852973"><i class="fa-brands fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      speed: 600,
+      parallax: true,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
 </body>
+
 </html>
