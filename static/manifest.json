@@ -25,13 +25,13 @@
       "type": "image/png"
     }
   ],
-    "start_url": "https://makeqrcode.vercel.app",
+    "start_url": "https://makeqrcode.vercel.app/",
     "background_color": "#181818",
     "display_override": ["fullscreen", "minimal-ui"],
     "display": "standalone",
     "author": "Adel Mahmoud",
     "orientation": "portrait",
-    "scope":"https://makeqrcode.vercel.app",
+    "scope":"https://makeqrcode.vercel.app/",
     "theme_color": "#000",
     "lang": "en",
     "dir": "auto"
