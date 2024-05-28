@@ -7,10 +7,10 @@ from PIL import Image
 app = Flask(__name__)
 @app.route("/")
 def main():
-    return render_template("index.html")
+    return render_template("inde.html")
 @app.route("/home")
 def main_1():
-    return render_template("index.html")
+    return render_template("inde.html")
 
 # URL qrcode
 @app.route("/QR")
