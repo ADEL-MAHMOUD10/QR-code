@@ -44,6 +44,7 @@ body {
     border: none;
     border-radius: 10px;
     transition: 0.5s;
+    background-color: #ffffff26;
 }
 .navbar .navbar-toggler:hover{
     border: none;
@@ -150,8 +151,14 @@ body {
     backdrop-filter: blur(25px);
     padding: 10px;
     margin: 5px;
+    position: relative;
     border-radius: 10px;
     background: #ffffff26;
+    animation: move 5s infinite;
+}
+@keyframes move {
+    from {top: 0px;}
+    to {top: 20px;}
 }
 .T_QR .m-items{
     display: flex; 
