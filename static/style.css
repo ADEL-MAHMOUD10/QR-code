@@ -61,7 +61,7 @@ body {
     transform: translatex(5px);
 }
 .navbar .collapse .nav-item .nav-link.active{
-    color: #00ca4e;
+    color: #6610f2;
 }
 
 .navbar ul li a{
@@ -72,7 +72,7 @@ body {
     color: #fff;
 }
 .navbar ul li a:hover{
-    color: #00ca4e;
+    color: #6610f2;
 }
 
 .intro{
