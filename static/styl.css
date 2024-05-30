@@ -32,7 +32,7 @@ body {
 }
 
 .navbar{
-    background-color: #6610f2;
+    background: linear-gradient(90deg,#00ca4e 0%,#6610f2 100%);
     align-items: center;
     justify-content: space-between;
 }
@@ -157,7 +157,7 @@ body {
     display: flex; 
 }
 .T_QR .m-items a{
-    color: #00ca4e;
+    color: #fff;
     margin: 2px;
     text-decoration: none;
     font-weight: bold;
@@ -166,7 +166,8 @@ body {
     transition: 0.5s;
 }
 .T_QR a:hover{
-    color: #F6F4F2;
+    transform: rotate(360deg);
+    color: #00ca4e;
 }
 .T_QR p{
     margin-top: 5px;
