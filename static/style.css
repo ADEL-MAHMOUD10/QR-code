@@ -8,7 +8,7 @@
     --size-font-L: 1.9rem;
     --main-button: #24801f;
     --hover--button: #2222c9;
-    --background--color: linear-gradient(180deg, rgba(115, 186, 114, 0.555) 0%, rgb(128, 176, 107) 90%);
+    --background--color: linear-gradient(240deg, rgba(115, 186, 114, 0.555) 0%, rgb(128, 176, 107) 90%);
 }
 .gravitas-one-regular {
     font-family: "Gravitas One", serif;
@@ -61,7 +61,7 @@ body {
     transform: translatex(5px);
 }
 .navbar .collapse .nav-item .nav-link.active{
-    color: #6610f2;
+    color: #00ca4e;
 }
 
 .navbar ul li a{
@@ -72,7 +72,7 @@ body {
     color: #fff;
 }
 .navbar ul li a:hover{
-    color: #6610f2;
+    color: #00ca4e;
 }
 
 .intro{
