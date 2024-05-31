@@ -106,7 +106,7 @@ body {
     transform: translatex(5px);
 }
 .navbar .collapse .nav-item .nav-link.active{
-    color: #00ca4e;
+    color: #000;
 }
 
 .navbar ul li a{
