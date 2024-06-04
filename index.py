@@ -1,7 +1,7 @@
 from flask import Flask,render_template,send_file,request
 import qrcode,io 
 from vobject import vCard
-from PIL import Image،io
+from PIL import Image
 
 
 app = Flask(__name__)
