@@ -1,1 +1,1 @@
-link : https://makeqrcode.vercel.app/
+https://makeqrcode.vercel.app/
