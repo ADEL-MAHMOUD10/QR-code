@@ -1,1 +1,0 @@
-https://makeqrcode.vercel.app/
